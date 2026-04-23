@@ -8,22 +8,25 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
+            background: linear-gradient(135deg, #4a7c59, #2e5d46);
             text-align: center;
-            padding-top: 80px;
+            padding-top: 100px;
+            margin: 0;
         }
 
         .container {
             background-color: white;
-            width: 300px;
+            width: 320px;
             margin: auto;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            animation: fadeIn 1s ease-in-out;
         }
 
         h1 {
             margin-bottom: 10px;
+            color: #2e5d46;
         }
 
         p {
@@ -32,17 +35,31 @@
         }
 
         button {
-            margin-top: 20px;
-            padding: 10px 20px;
+            margin-top: 25px;
+            padding: 12px 25px;
             border: none;
-            background-color: #4a7c59;
+            background: linear-gradient(135deg, #4a7c59, #3b6147);
             color: white;
-            border-radius: 8px;
+            border-radius: 10px;
             cursor: pointer;
+            font-size: 14px;
+            transition: 0.3s;
         }
 
         button:hover {
-            background-color: #3b6147;
+            transform: scale(1.05);
+            background: linear-gradient(135deg, #3b6147, #2e5d46);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 
@@ -50,8 +67,9 @@
 <body>
 
     <div class="container">
-        <h1>Pineda, Dj S.</h1>
-        <p>BSIT 1- SOUTH 8</p>
+        <h1>Dj Pineda</h1>
+        <p>First-year College IT Student</p>
+        <p>BSIT 1 - Section</p>
 
         <a href="Pineda_Dj_Portfolio.pdf" target="_blank">
             <button>View My Portfolio</button>
